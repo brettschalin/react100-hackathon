@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: radial-gradient(#0000ff, #aaaaff);
+}
+
+#title {
+  text-align: center;
+  font-family: Helvetica;
+
+}
+
+#description {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 12pt;
+}
+
+#note {
+  font-size: 10pt;
+}
+
+#map-id {
+  /*would do a percentage here but that collapses the map to zero*/
+  height: 500px;
+  width: 100%;
+}
+
+#search-text {
+  margin-right: 5px;
+}
+
