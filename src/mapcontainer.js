@@ -82,7 +82,6 @@ export class MapContainer extends Component {
     updateMarkers() {
         const bounds = this.state.map.getBounds();
         let markers = [];
-        let clusters;
         this.state.data.forEach(point => {
             let loc = new window.google.maps.LatLng({ lat: parseFloat(point.latitude), lng: parseFloat(point.longitude) });
             if (bounds.contains(loc)) {
@@ -93,7 +92,7 @@ export class MapContainer extends Component {
                 }));
             }
         });
-        clusters = new MarkerClusterer(this.state.map, markers, {
+        new MarkerClusterer(this.state.map, markers, {
             imagePath: "https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclustererplus/images/m",
         });
 

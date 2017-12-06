@@ -96,17 +96,23 @@ To get the project up and running, follow the instructions in the Usage and Inst
 - [Something Missing?](#something-missing)
 
 ## Installation
-1\. For Windows users: download Git Bash [here](https://git-scm.com/downloads). Mac and Linux users can use the built in terminal
-2\. Clone this repository and `cd` on the terminal to the root folder (likely `~/users/downloads/react100-hackathon`)
-2\.5 You might have to run `npm install` before moving on to step 3.
-3\. run `npm run build`
-4\. The previous command should give a couple more steps. Run the first (likely `npm install -g serve`) to complete installation
+1. For Windows users: download Git Bash [here](https://git-scm.com/downloads). Mac and Linux users can use the built in terminal
+
+2. Clone this repository and `cd` on the terminal to the root folder (likely `~/users/downloads/react100-hackathon`)
+
+3. You might have to run `npm install` before moving on to step 3.
+
+4. run `npm run build` (This likely gives one warning. It has to do with how webpack loads its requirements and isn't something I can easily change. Thankfully it doesn't affect functionality so you can feel free to ignore it. But if you do figure out how to fix it, let me know.)
+
+5. The previous command should give a couple more steps. Run the first (likely `npm install -g serve`) to complete installation
 
 ## Usage
 To get the app open:
-1\. Make sure the terminal is open and everything is compiled.
-2\. Run `serve -s build`
-3\. Step 2 will give you a port number. Open your web browser and go to `localhost:<portnumber>`.
+1. Make sure the terminal is open and everything is compiled.
+
+2. Run `serve -s build`
+
+3. Step 2 will give you a port number. Open your web browser and go to `localhost:<portnumber>`.
 
 From here, the webpage should be open and loading. The map will initially load a view centered on Riverside, CA, but you can use the search bar to move anywhere else. At some point I plan to change the markers so you can click and see details of each crime (this is not currently implemented). Due to technical reasons relating to getting Google Maps working, the crime markers do not load until the map is moved in some way.
 
